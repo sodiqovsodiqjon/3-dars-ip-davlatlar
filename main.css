@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+img{
+    vertical-align: middle;
+}
+
+ul , ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    -decoration: none;
+    color: black;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: 1px;
+   padding: 0;
+   overflow: hidden;
+   border: 0;
+   clip: rect(0 0 0 0);
+  }
+ 
+
+
+
+
+   .mark__{
+    clear:both
+   }
+
+   .list__item{
+    width: 235px;
+    /* margin: 10px -2px; */
+    /* -align: center; */
+    height: 510px;
+    
+    
+   }
+
+   .list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.box{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+
+button{
+    border: none;
+}
+.list__img{
+    border-radius: 8px;
+}
+
+.list__img:hover{
+ transform: scale(1.1);  transition: transform 2s;
+
+
+
+}
+.header{
+    display: flex;
+}
+
+.header__bottom-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__bottom{
+    margin: 10px 0 30px;
+}
+
+.d-block{
+    border-radius: 10px;
+}
+
+.sek__ul{
+    margin-bottom: 20px;
+}
+
+.header__button{
+    background-color: rgb(147, 165, 198);
+}
+
+.header__inp{
+    width: 400px;
+}
+
+.header__katalog-btn{
+    background-color: blueviolet;
+    border: none;
+}
+
+
+
+
+
+input[type=], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  
+  /* Add a blue  color to links */
+  a {
+    color:#000;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: #000;
+  }
+
+  .signin {
+    background-color: #f1f1f1;
+    -align: center;
+  }
+  
+  body {
+    background-color: white;
+    color: black;
+    
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  .header__search{
+    width: 500px;
+  }
+
+.text{
+    margin-top: 15px;
+}
