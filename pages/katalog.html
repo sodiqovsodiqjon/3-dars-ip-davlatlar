@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../pages.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../main.css">
-    <title>Document</title>
+    <title>index</title>
 </head>
 
 <body>
@@ -19,29 +20,54 @@
     <header>
         <div class="container">
             <div class="box">
-                <a class="logo__link" style="text-decoration:none;" href="#"> <img src="../images/Без названия.svg"
-                        alt="logo">
+
+                <a class="logo__link" style="text-decoration:none;" href="../pages/index.html"> <img
+                        src="../images/Без названия.svg" alt="logo">
                 </a>
+                <a class="header__katalog" href="../pages/katalog.html">Katolog 📰</a>
 
-                <a class="header-logo-link" href="">
-                    <img class="header-logo-img" src="./images/NAMANGANLIKLAR 24.svg" alt="">
-                </a>
-
-
-                <a class="header__katalog" href="../pages/katalog.html">Katolog</a>
-
-                <input type="text" placeholder="Mahsulot va turkumlar izlash">
+                <input class="header__search" type="text" style="width: 260px;"
+                    placeholder="Mahsulot va turkumlar izlash...  🔍">
+                
                 <div class="buttons">
-                    <a class="header__button" href="">
-                        <button>Kirish</button>
-                    </a>
-                    <a class="header__button" href="">
-                        <button>Saralanganlar</button>
-                    </a>
-                    <a class="header__button" href="">
-                        <button>Savat</button>
-                    </a>
+                    <button class="header__buttons"> Kirish 🔑</button>
+                    
+                    <button class="header__buttons">Saralanganlar ❤️</button>
 
+                   
+                    <button class="header__buttons ">Savat 🛒</button>
+                    
+
+                    <style>
+                        body {
+                            background-color: white;
+                            color: black;
+                        }
+
+                        .dark-mode {
+                            background-color: rgb(9, 9, 9);
+                            color: white;
+
+                        }
+                        .active {
+                            background-color: black;
+                        }
+                    </style>
+                    </head>
+
+                    <body>
+
+
+                        <button onclick="myFunction()">🌙|🌞</button>
+
+                        <script>
+                            let link = document.querySelector('.header__bottom-link')
+                            function myFunction() {
+                                var element = document.body;
+                                element.classList.toggle("dark-mode");
+                                element.classList.toggle("header__buttons")
+                            }
+                        </script>
                 </div>
 
 
@@ -49,48 +75,52 @@
             <div class="header__bottom ">
                 <ul class="header__bottom-list ">
                     <li class="header__bottom-item">
-                        <a href="../pages/elekronika.html"> Elektronika</a>
+                        <a class="header__bottom-link" href="../pages/elekronika.html"> Elektronika</a>
                     </li>
 
                     <li class="header__bottom-item">
-                        <a href="../pages/maishiytexnika.html">Maishiy texnika</a>
+                        <a  href="../pages/maishiytexnika.html">Maishiy texnika</a>
                     </li>
 
                     <li class="header__bottom-item">
-                        <a href="../pages/kiyim.html">Kiyim</a>
+                        <a  href="../pages/kiyim.html">Kiyim</a>
                     </li>
 
                     <li class="header__bottom-item">
-                        <a href="../pages/poyabzal.html"> Poyapzallar</a>
+                        <a  href="../pages/poyabzal.html"> Poyapzallar</a>
                     </li>
 
                     <li class="header__bottom-item">
-                        <a href="../pages/aksesuarlar.html"> Aksusuarlar</a>
+                        <a  href="../pages/aksesuarlar.html"> Aksusuarlar</a>
                     </li>
 
                     <li class="header__bottom-item">
-                        <a href="../pages/gozlallik.html"> Go'zallik</a>
+                        <a  href="../pages/gozlallik.html"> Go'zallik</a>
                     </li>
 
                     <li class="header__bottom-item">
-                        <a href="../pages/salomatlik.html"> Salomatlik</a>
+                        <a  href="../pages/salomatlik.html"> Salomatlik</a>
                     </li>
 
                     <li class="header__bottom-item">
-                        <a href="../pages/uyrozgor.html"> Uy-ro'zgor buyumlari</a>
+                        <a  href="../pages/uyrozgor.html"> Uy-ro'zgor buyumlari</a>
                     </li>
 
                     <li class="header__bottom-item">
-                        <a href="../pages/qurilish.html"> Qurilish va tamirlash</a>
+                        <a  href="../pages/qurilish.html"> Qurilish va tamirlash</a>
                     </li>
 
                     <li class="header__bottom-item">
-                        <a href="../pages/avtotovar.html"> Avtotovarlar</a>
+                        <a  href="../pages/avtotovar.html"> Avtotovarlar</a>
                     </li>
 
 
                     <li class="header__bottom-item">
                         <a href="../pages/bolalartov.html"> Bolalar tovarlari</a>
+                    </li>
+
+
+
                     </li>
                     <li class="header__bottom-item">
                         <div class="custom-select">
@@ -103,6 +133,13 @@
 
                     </li>
 
+                    <li class="header__bottom-item">
+                        <a href="../pages/admin.html">
+                            <button>Admin</button>
+                        </a>
+                    </li>
+
+
 
                 </ul>
             </div>
@@ -110,3 +147,92 @@
 
         </div>
     </header>
+
+    <main>
+        <section class="our">
+            <div class="container">
+                <div class="our__box">
+                    <ul class="our__list">
+                        <li class="our__item">
+                            <a href="../pages/elekronika.html">🎧 Elektronika ></a>
+                        </li>
+
+                        <li class="our__item">
+                            <a href="../pages/maishiytexnika.html">📺 Maishiy texnika ></a>
+                        </li>
+
+                        <li class="our__item">
+                            <a href="../pages/kiyim.html">👕 Kiyim</a>
+                        </li>
+
+                        <li class="our__item">
+                            <a href="../pages/poyabzal.html">👟 Poyabzal</a>
+                        </li>
+
+                        <li class="our__item">
+                            <a href="../pages/aksesuarlar.html">🎒 Aksesurlar</a>
+                        </li>
+
+                        <li class="our__item">
+                            <a href="../pages/gozlallik.html">💅 Go'zallik</a>
+                        </li>
+
+                        <li class="our__item">
+                            <a href="../pages/salomatlik.html">🩹 Salomatlik</a>
+                        </li>
+
+                        <li class="our__item">
+                            <a href="../pages/uyrozgor.html">🏠 Uy-ro'zgor buyumlari</a>
+                        </li>
+
+                        <li class="our__item">
+                            <a href="../pages/qurilish.html">🧱Qurilish va tamirlash</a>
+                        </li>
+
+                        <li class="our__item">
+                            <a href="../pages/avtotovar.html">🚘 Avto tovarlar</a>
+                        </li>
+
+                        <li class="our__item">
+                            <a href="../pages/bolalartov.html">🧸 Bolalar tovarlari</a>
+                        </li>
+
+
+
+
+                    </ul>
+
+                    <span class="line"></span>
+
+
+                    <div class="kat__box">
+                        <!-- <a class="kat__link1" href="./maishiytexnika.html">Maishiy texnika ></a>
+                    
+                    <a href="./maishiytexnika.html"></a> -->
+                    <a href="./maishiytexnika.html">
+
+                        <h3>Maishiy texnika ></h3>
+
+
+                    </a>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+
+
+<!-- <h2>Toggle Dark/Light Mode</h2> -->
+<!-- <p>Click the button to toggle between dark and light mode for this page.</p> -->

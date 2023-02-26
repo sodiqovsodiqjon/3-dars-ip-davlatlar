@@ -155,14 +155,17 @@ input[type=], input[type=password] {
     opacity:1;
   }
   
+  button{
+    background-color: white;
+  }
   /* Add a blue  color to links */
   a {
-    color:#000;
+    color:rgb(99, 97, 97);
     text-decoration: none;
   }
   
   a:hover{
-    color: #000;
+    color: rgb(86, 84, 84);
   }
 
   .signin {
@@ -181,10 +184,29 @@ input[type=], input[type=password] {
     color: white;
   }
   
-  .header__search{
-    width: 500px;
-  }
+ 
 
 .text{
     margin-top: 15px;
 }
+
+
+.our__item{
+  font-size: 18px;
+  margin:30px  0px;
+}
+
+.line{
+  width:1px;
+
+height: 695px;
+ background-color: #636161;
+ margin-left: 20px;
+}
+
+
+
+.our__box{
+  display: flex;
+}
+
