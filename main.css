@@ -3,6 +3,7 @@
 }
 body{
     margin: 0;
+    font-size: 15px;
 }
 
 img{
@@ -210,3 +211,7 @@ height: 695px;
   display: flex;
 }
 
+.kat__box{
+  display:flex;
+  justify-content: space-between;
+}
