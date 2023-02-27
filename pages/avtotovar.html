@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../pages.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../main.css">
-    <title>Document</title>
+    <title>Elelktronika</title>
 </head>
 
 <body>
@@ -19,29 +20,57 @@
     <header>
         <div class="container">
             <div class="box">
-                <a class="logo__link" style="text-decoration:none;" href="../pages/index.html"> <img src="../images/Без названия.svg"
-                        alt="logo">
+
+                <a class="logo__link" style="text-decoration:none;" href="../pages/index.html"> <img
+                        src="../images/Без названия.svg" alt="logo">
                 </a>
+                <a class="header__katalog" href="../pages/katalog.html">Katolog 📰</a>
 
-                <a class="header-logo-link" href="">
-                    <img class="header-logo-img" src="./images/NAMANGANLIKLAR 24.svg" alt="">
-                </a>
+                <input class="header__search" type="text" style="width: 260px;"
+                    placeholder="Mahsulot va turkumlar izlash...  🔍">
 
-
-                <a class="header__katalog" href="../pages/katalog.html">Katolog</a>
-
-                <input type="text" placeholder="Mahsulot va turkumlar izlash">
                 <div class="buttons">
-                    <a class="header__button" href="">
-                        <button>Kirish</button>
-                    </a>
-                    <a class="header__button" href="">
-                        <button>Saralanganlar</button>
-                    </a>
-                    <a class="header__button" href="">
-                        <button>Savat</button>
+                    <a class="header__button" href="../pages/login.html">
+                        <button>Kirish 🔑</button>
                     </a>
 
+                    <button class="header__buttons">Saralanganlar ❤️</button>
+
+
+                    <button class="header__buttons ">Savat 🛒</button>
+
+
+                    <style>
+                        body {
+                            background-color: white;
+                            color: black;
+                        }
+
+                        .dark-mode {
+                            background-color: rgb(9, 9, 9);
+                            color: white;
+
+                        }
+
+                        .active {
+                            background-color: black;
+                        }
+                    </style>
+                    </head>
+
+                    <body>
+
+
+                        <button onclick="myFunction()">🌙|🌞</button>
+
+                        <script>
+                            let link = document.querySelector('.header__bottom-link')
+                            function myFunction() {
+                                var element = document.body;
+                                element.classList.toggle("dark-mode");
+                                element.classList.toggle("header__buttons")
+                            }
+                        </script>
                 </div>
 
 
@@ -49,7 +78,7 @@
             <div class="header__bottom ">
                 <ul class="header__bottom-list ">
                     <li class="header__bottom-item">
-                        <a href="../pages/elekronika.html"> Elektronika</a>
+                        <a class="header__bottom-link" href="../pages/elekronika.html"> Elektronika</a>
                     </li>
 
                     <li class="header__bottom-item">
@@ -92,6 +121,10 @@
                     <li class="header__bottom-item">
                         <a href="../pages/bolalartov.html"> Bolalar tovarlari</a>
                     </li>
+
+
+
+                    </li>
                     <li class="header__bottom-item">
                         <div class="custom-select">
                             <select>
@@ -104,8 +137,11 @@
                     </li>
 
                     <li class="header__bottom-item">
-                        <button onclick="myFunction()">Toggle dark mode</button>
+                        <a href="../pages/admin.html">
+                            <button>Admin</button>
+                        </a>
                     </li>
+
 
 
                 </ul>
@@ -114,3 +150,470 @@
 
         </div>
     </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <a class="elektronika__link" href="../pages/index.html">Bosh saxifa /</a>
+                <a class="elektronika__link" href="../pages/elekronika.html">Elektronika</a>
+                <br>
+                <br>
+                <br>
+                <h4>Электроника</h4>
+                <hr class="elektronika__line">
+                <div class="d-flex elektronika__line" style="height: 2px;">
+                    <div class="vr"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="for">
+            <div class="container d-flex">
+                <div class="for__box">
+                    <h6 style="padding: 10px 0;">Turkumlar</h6>
+                    <ul>
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Elektronlar uchun aksesuarlar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">O'yin pristavkalari</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Kvadratopterlar va aksesuarlar</a>
+                        </li>
+
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Kopyuter texnikasi</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Navigatorlar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Quloqchinlar va avdio txnikalar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Noutbook planshet va telefonlar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Optik anjomlar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Ofis texnikalari</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Kopyuter texnikasi</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Navigatorlar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Quloqchinlar va avdio txnikalar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Noutbook planshet va telefonlar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Optik anjomlar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Ofis texnikalari</a>
+                        </li>
+
+
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Ofis texnikalari</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Kopyuter texnikasi</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Navigatorlar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Quloqchinlar va avdio txnikalar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Noutbook planshet va telefonlar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Optik anjomlar</a>
+                        </li>
+
+                        <li class="for__list">
+                            <a href="../pages/elekronika.html">Ofis texnikalari</a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+                <div class="min__box">
+                    <ul class="min__box-item">
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+                        <li class="list__item">
+                            <a class="list__item-link" href="#">
+                                <img class="list__img" src="../images/cf9pf2qvtie1lhbhjn10.jpg" width="202" height="309"
+                                    alt="pepsi">
+
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                                <p class="text__twoo">pepsi</p>
+                                <br>
+                                <mark class="mark__text">1 800 sum</mark>
+                                <br>
+                                <del class="el__text">22000 sum</del>
+                                <br>
+                                <b class="b__text">9000</b>
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        </section>
+    </main>
+</body>
+
+</html>
