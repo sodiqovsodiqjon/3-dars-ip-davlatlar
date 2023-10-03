@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../chern.css">
+</head>
+<body>
+    <button id="myBtn" class="header__buttons savat">Savat 🛒</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <ul class="modal-items"></ul>
+      </div>
+    </div>
+    
+    <div class="list"></div>
+    <div class="cart">
+      <h2>Shopping Cart</h2>
+      <ul class="cart-items"></ul>
+    </div>
+<script>
+    let list = document.querySelector(".list");
+let cart = document.querySelector(".cart-items");
+let modalItems = document.querySelector(".modal-items");
+let checkoutBtn = document.querySelector(".checkout-btn");
+
+let products = "https://fakestoreapi.com/products";
+
+fetch(products)
+  .then((res) => res.json())
+  .then((data) => {
+    list.innerHTML = data
+      .map(
+        (item) =>
+          `<div class="list__item">
+            <img class="list_img" src="${item.image}" alt="${item.title}">
+            <p class="text">${item.title}</p>
+            <p class="text__twoo">${item.category}</p>
+            <p class="mark__text">${item.price} sum</p>
+            <button class="add-card" onclick="addToCart(${item.id})">Add card</button>
+          </div>`
+      )
+      .join("");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+function addToCart(itemId) {
+  let selectedItem = data.find((item) => item.id === itemId);
+
+  if (selectedItem) {
+    let cartItem = document.createElement("li");
+    cartItem.innerHTML = `
+      <img src="${selectedItem.image}" alt="${selectedItem.title}">
+      <p>${selectedItem.title}</p>
+      <p>${selectedItem.price} sum</p>
+    `;
+    cart.appendChild(cartItem);
+
+    let modalItem = document.createElement("li");
+    modalItem.innerHTML = `
+      <img src="${selectedItem.image}" alt="${selectedItem.title}">
+      <p>${selectedItem.title}</p>
+      <p>${selectedItem.price} sum</p>
+    `;
+    modalItems.appendChild(modalItem);
+  }
+}
+
+// Modal functionality
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+// Checkout functionality
+checkoutBtn.addEventListener("click", () => {
+  cart.innerHTML = "";
+  modalItems.innerHTML = "";
+});
+</script>
+</body>
+</html>

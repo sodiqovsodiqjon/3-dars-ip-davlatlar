@@ -41,7 +41,9 @@ a{
  
 
 
-
+.text{
+  font-size: 16px;
+}
 
    .mark__{
     clear:both
@@ -49,9 +51,7 @@ a{
 
    .list__item{
     width: 235px;
-    /* margin: 10px -2px; */
-    /* -align: center; */
-    height: 510px;
+    height: 600px;
     
     
    }
@@ -275,3 +275,309 @@ margin-top: 29px;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
   }
+
+
+/* LOGIN MODAL */
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+/* button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+} */
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.sing-up-modal-inp{
+  width: 950px;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+form {
+  margin: auto;
+  text-align: center;
+  background-color: rgb(0, 195, 255);
+  width: 400px;
+  height: 100%;
+  padding: 15px 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  font-size: small;
+}
+/* 
+div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 5px;
+} */
+input[type="checkbox"] {
+  margin: 0 5px;
+}
+input[type="submit"] {
+  margin: 0 auto;
+  padding: 10px 15px;
+  background-color: rgb(0, 195, 255);
+  border: 1px solid white;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(0, 195, 255);
+}
+label {
+  margin: 5px;
+  cursor: pointer;
+}
+input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.list_img{
+  width: 200px;
+  height: 250px;
+}
+
+.list_img:hover{
+  transition: transform .5s;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+
+
+
+
+
+
+/* MODAL */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 90px;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:white; /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.645); /* Black w/ opacity */
+  
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-100px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #6a11cb;
+  color: white;
+}
+
+.modal-body {
+  background-color: white;
+  padding: 2px 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  margin: 0;
+}
+
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #6a11cb;
+  color: white;
+}
+.modal-content{
+  max-width: 100%;
+    height: 100%;
+}
+
+.card{
+  margin-top: 20px;
+}
+
+.Add_card{
+  border-radius: 6px;
+  padding: 5px 10px;
+  background-color: blue;
+}
+
+.remove-card{
+  border-radius: 5px;
+  background: red;
+  color: white;
+  margin-top: 10px;
+}
+
+.card-body{
+  margin-top: -40px;
+}
+
+.card-title{
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.card-img-top{
+  height: 400px;
+  max-width: 100%;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
